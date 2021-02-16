@@ -1,6 +1,6 @@
-import sqlite3
+import pyodbc
 
-connection = sqlite3.connect('database.db')
+connection = pyodbc.connect('DSN=test_db7')
 
 with open('schema.sql') as f:
     connection.executescript(f.read())

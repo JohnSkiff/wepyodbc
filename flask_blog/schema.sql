@@ -6,7 +6,7 @@ go
 
 CREATE TABLE posts (
     id INTEGER PRIMARY KEY IDENTITY,
-    created_baba DATETIME NOT NULL DEFAULT GETDATE(),
+    created DATETIME NOT NULL DEFAULT GETDATE(),
     title TEXT NOT NULL,
     content TEXT NOT NULL
 )
